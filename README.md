@@ -1,2 +1,2 @@
 # Algorithm
-Solution of algorithmic question
+- KMP implemented.
