@@ -106,11 +106,6 @@ void solve(int len)
 
 int main()
 {
-    //StringMatching obj("abcaabacbdzabcabcabczabcabcaba", "abcabczabcabcaba");
-    //StringMatching obj("abcaabacbdzabcabcabczabcabcaba", "dabdabd");
-    //obj.precomuteBorderForKMP();
-    //obj.iterateText();
-    //obj.printBorderOfPattern();
     int len;
     cin >> len;
     //string a, b;
