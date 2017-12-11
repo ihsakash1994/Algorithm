@@ -18,7 +18,6 @@ BSTNode* GetBSTNode(int data)
     return root;
 }
 
-
 BSTNode* insert (BSTNode* root, data)
 {
     if (root == NULL)
@@ -32,6 +31,26 @@ BSTNode* insert (BSTNode* root, data)
     else
     {
         root->right = insert(root->right, data);
+    }
+}
+
+bool find (BSTNode* root, data)
+{
+    if (root == NULL)
+    {
+        return false;
+    }
+    else if (root->data == data)
+    {
+        return true;
+    }
+    else if (data < root->data)
+    {
+        find(root->left, data);
+    }
+    else
+    {
+        find(root->right, data);
     }
 }
 
