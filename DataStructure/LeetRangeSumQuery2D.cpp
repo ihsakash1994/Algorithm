@@ -26,7 +26,7 @@ void PreProcess(vector<vector<int> > &sum, vector<vector<int> > &a)
 void Update(vector<vector<int> > &sum, int ix, int jx, int val)
 {
     int n = sum.size(), m = sum[0].size();
-
+    
 
     for (int i = ix; i < n; i += (i & (-i)))
     {
@@ -57,10 +57,11 @@ int Query(vector<vector<int> > &sum, vector<vector<int> > &a, int ix1, int jx1, 
     {
         for (int j = jx1; j >= 1; j -= (j & (-j)))
         {
+        	//cout << ix1 << " : " << jx1 << endl;
             ans += sum[i][j];
         }
     }
-
+    
     return ans;
 }
 
@@ -83,7 +84,7 @@ int main()
 
     vector<vector<int> > sum(n+1, vector<int>(m+1, 0));
     PreProcess1(sum, a);
-
+    
     Print(a);
     Print(sum);
 
@@ -102,7 +103,7 @@ int main()
         else
         {
             int ix1, jx1, ix2, jx2;
-            scanf("%d%d%d%d", &ix1, &ix2, &jx1, &jx2);
+            scanf("%d%d%d%d", &ix1, &jx1, &ix2, &jx2);
             printf("%d\n", Query(sum, a, ix1, jx1, ix2, jx2));
         }
     }
