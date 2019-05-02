@@ -1,9 +1,9 @@
-Given a set T of characters and a string S, find the minimum window in S which will contain all the characters in T..
+// Given a set T of characters and a string S, find the minimum window in S which will contain all the characters in T..
 
-eg,
-S = “ADOBECODEBANC”
-T = “ABC”
-T = “ABCA”
+// eg,
+// S = “ADOBECODEBANC”
+// T = “ABC”
+// T = “ABCA”
 
 
 Minimum window is “BANC”.
